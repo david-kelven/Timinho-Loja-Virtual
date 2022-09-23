@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<title>Timinho Store</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="script.js">
+	<link rel="stylesheet" href="cadastro.html">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+	
+</head>
+<body>
+    <header>
+        <nav>
+			<button onclick="abrirMenu()">&#9776;</button>
+            <div class="logo">
+                <a href="index.html"><img src="./imagens/logo.png" alt="Timinho Store" width="125px" height="125px"></a>
+            </div> 
+			<div class="search-box">
+				<input type="text" class="search-txt" placeholder="O que você está procurando?">
+				<a href="#"><span class="fa-solid fa-magnifying-glass"></i></span></a>
+			</div>
+            <div id="esquerdo">
+				<div id="icons">
+					<a href="#"><span class="fa-solid fa-comments fa-2x"></i></span></a>
+					<a href="#"><span class="fa-solid fa-cart-shopping fa-2x"></i></span></a>
+					<a href="cadastro.html"><span class="fa-solid fa-user fa-2x"></i></span></a>
+				</div>
+				<div id="text">
+					<a href="#">Atendimento</a>
+                	<a href="#">Meu carrinho</a>
+                	<a href="cadastro.html">Minha conta</a>
+				</div>
+                
+            </div>
+                
+            <div id="inferior">
+				<ul id="botoesMenu"> 
+					<a href="index.html">
+						<li><p>Início</p></li>
+					</a>
+					<a href="#">
+						<li><p>Lançamentos</p></li>	
+					</a>
+					<a href="#">
+						<li><p>Camisas</p></li>
+					</a>  
+					<a href="#">
+						<li><p>Masculinas</p></li>
+					</a>
+					<a href="#">
+						<li><p>Femininas</p></li>
+					</a>
+					<a href="#">
+						<li><p>Infantil</p></li>
+					</a>
+				</ul> 
+            </div>
+			
+        </nav>          
+    </header>
+
+	<div id="produtos">	
+		<div id="semanal">
+			<h1>TOP 5 DA SEMANA</h1>
+		<div id="top">
+			<img src="./imagens/PSG.jpg" alt="Timinho Store" width="400" height="400">
+			<img src="./imagens/BARCELONA.jpg" alt="Timinho Store" width="400" height="400">
+			<img src="TIMAO.jpg" alt="Timinho Store" width="400" height="400">
+			<img src="./imagens/BAYERN.jpg" alt="Timinho Store" width="400" height="400">
+			<img src="./imagens/CHELSEA.jpg" alt="Timinho Store" width="400" height="400">
+		</div>
+		
+		</div>
+		<div id="fila1">
+			<h1>Camisas Nacionais</h1>
+			<section id="fila1"></section>
+		</div>
+		<div id="fila2">
+			<h1>Camisas Internacionais</h1>
+			<section id="fila2"></section>
+		</div>
+		<div id="fila3">
+			<h1>Camisas de Seleções</h1>
+			<section id="fila3"></section>
+		</div>
+	</div>
+
+
+
+
+    <footer>
+		<div class="main-content">
+			<div class="left box">
+				<h2> SOBRE NÓS</h2>
+				<div class="content">
+					<p>A LOJA TIMINHO STORE É ESPECIALIZADA EM CAMISAS DE TIMES DE FUTEBOL</p>
+				
+					<div class="social">
+						<a href="#"><span class="fa-brands fa-whatsapp"></span></a>
+						<a href="#"><span class="fab fa-instagram"></span></a>
+						<a href="#"><span class="fab fa-twitter"></span></a>
+					</div>
+				</div>
+			</div><!--left box-->
+			<div class="center box">
+				<h2>SOBRE O SITE</h2>
+				<div class="content">
+                    <a href="#">COMO COMPRAR</a><br/>
+                    <a href="#">TROCAS E DEVOLUÇÕES</a><br/>
+                    <a href="#">POLÍTICAS DE PRIVACIDADE</a><br/>
+                    <a href="#">TERMOS DE SERVIÇOS</a><br/>
+	
+				</div>
+			</div>
+			<div class="right box">
+				<h2>FORMAS DE PAGAMENTO</h2>
+				<div class="content">
+					<div class="pagamento">
+						<img src="./imagens/deposito.png" alt="deposito" width="80px" height="50px">
+						<img src="./imagens/visa.png" alt="visa" width="80px" height="50px">
+						<img src="./imagens/mastecard.png" alt="mastercard" width="80px" height="50px">	
+						<img src="./imagens/pix.png" alt="pix" width="80px" height="50px">
+					</div>
+				</div>
+			</div>
+		</div><!--main-content-->
+		<div class="bottom">
+			<div class="center">
+				<span class="credit">Criado por <a href="#">David Kelven</a></span>
+				<span class="far fa-copyright">2022 Todos os diteitos reservados</span>
+			</div>
+		</div>
+	</footer>
+    <script	 src="https://kit.fontawesome.com/869fd21093.js" crossorigin="anonymous"></script>
+	<script src="script.js"> </script>
+	<script>
+		function abrirMenu() {
+			const botoesMenu = document.getElementById('botoesMenu');
+
+			botoesMenu.className = botoesMenu.className.includes('responsivo') ? '' : 'responsivo'
+		}
+	</script>
+</body>
+</html>
+
+
+	
